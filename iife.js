@@ -6,7 +6,7 @@
 
 
 
-/* DEMO */
+/* LIBRARY DEMO */
 // Demo usage: sandwichLibrary will expose breads and toppings object.
 
 (function() {
@@ -41,7 +41,10 @@
 }());
 
 
-/* CREATE ONE GLOBAL VARIABLE. THIS WAY WE DONT HAVE HUNDREDS OF LIBRARIES, JUST ONE*/
+
+/* LIBRARY SYSTEM APPROACH*/
+/* CREATE ONE GLOBAL VARIABLE. THIS WAY WE DONT HAVE HUNDREDS OF LIBRARIES, JUST ONE.
+	THIS IS USED IN NODE.JS, FOR EXAMPLE. A FUNCTION WILL GO GET THE LIBRARY FOR YOU.*/
 
 // 1. Create function, first argument is name of library and second argument is function that returns library.
 
@@ -59,7 +62,7 @@
 			return libraryStorage[libraryName];
 		}
 	}
-
+	// THIS IS THE GLOBAL VARIABLE, NO MATTER HOW MANY LIBRARIES YOU HAVE
 	window.librarySystem = librarySystem;
 
 }())
