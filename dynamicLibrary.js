@@ -18,6 +18,7 @@
 	
 
 	// Library System Case
+	// If library is in an environment where there is a library system, then it will run system, else not.
 
 	// If librarySystem is not undefined.
 	// typeof checks to see what something is; string, function, number, etc.
