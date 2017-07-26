@@ -15,14 +15,20 @@
 		toppings: toppings
 	};
 
-	window.sandwichLibrary = sandwichLibrary;
+	
 
 	// Library System Case
 
-	// If librarySystem is undefined.
-
-	if () {
-
-	} else {}
+	// If librarySystem is not undefined.
+	// typeof checks to see what something is; string, function, number, etc.
+	// Now its dynamic, it will pick which one applies.
+	if (typeof librarySystem !== 'undefined') {
+		librarySystem('sandwichLibrary', function() {
+			return sandwichLibrary;
+		});
+		// If there is no system then it will put the object directly on the window.
+	} else {
+		window.sandwichLibrary = sandwichLibrary;
+	}
 
 }())
