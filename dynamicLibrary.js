@@ -1,3 +1,8 @@
+
+
+/* Use a Library System or make window object property */
+
+
 (function() {
 
 	var breads = {
